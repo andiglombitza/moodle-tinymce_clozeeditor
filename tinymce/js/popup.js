@@ -1,4 +1,4 @@
-// htmlArea v3.0 - Copyright (c) 2002, 2003 interactivetools.com, inc.
+// HtmlArea v3.0 - Copyright (c) 2002, 2003 interactivetools.com, inc.
 // This copyright notice MUST stay intact for use (see license.txt).
 //
 // Portions (c) dynarch.com, 2003
@@ -7,9 +7,9 @@
 // For full source code and docs, visit http://www.interactivetools.com/
 //
 // Version 3.0 developed by Mihai Bazon.
-//   http://dynarch.com/mishoo
+// http://dynarch.com/mishoo
 //
-// $Id: popup.js,v 1.1 2006/03/04 15:24:17 julmis Exp $
+// $Id: popup.js,v 1.1 2006/03/04 15:24:17 julmis Exp $ .
 
 function getAbsolutePos(el) {
     var r = { x: el.offsetLeft, y: el.offsetTop };
@@ -60,17 +60,19 @@ function __dlg_translate(i18n) {
             var span = spans[i];
             if (span.firstChild && span.firstChild.data) {
                 var txt = i18n[span.firstChild.data];
-                if (txt)
+                if (txt) {
                     span.firstChild.data = txt;
+                }
             }
         }
     }
     var txt = i18n[document.title];
-    if (txt)
+    if (txt) {
         document.title = txt;
+    }
 };
 
-// closes the dialog and passes the return info upper.
+// Closes the dialog and passes the return info upper.
 function __dlg_close(val) {
         opener.Dialog._return(val);
     window.close();
