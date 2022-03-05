@@ -2,6 +2,9 @@
 ## TODO
 (190 errors/235 warnings) => phplint (0/0), phpcs (0/0), js (185/234), css (1/0), phpdoc (3/0), savepoint (0/0), thirdparty (0/0), grunt (1/1), shifter (0/0), mustache (0/0), 
 
+## 05 March 2022
+* tested OK with Moodle 4.0beta (Build: 20220303)
+* 
 ## 04 November 2020
 * tested OK with Moodle 3.10beta+ (Build: 20201103)
 
